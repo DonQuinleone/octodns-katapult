@@ -1,0 +1,17 @@
+{
+  "pagination": {
+    "current_page": 2,
+    "total_pages": 2,
+    "total": 3,
+    "per_page": 2,
+    "large_set": false
+  },
+  "dns_zones": [
+    {
+      "id": "dnszone_betatests",
+      "name": "beta.tests",
+      "default_ttl": 3600,
+      "verified": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "dns_zone": {
+    "id": "dnszone_k75eFc4UBOgeE5Zy",
+    "name": "unit.tests",
+    "default_ttl": 3600,
+    "verified": true
+  }
+}

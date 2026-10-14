@@ -1,0 +1,319 @@
+{
+  "dns_records": [
+    {
+      "id": "dnsrec_0001",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": 300,
+      "type": "A",
+      "priority": null,
+      "content": "1.2.3.4",
+      "content_attributes": {
+        "A": {
+          "ip_address": "1.2.3.4"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0002",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": 300,
+      "type": "A",
+      "priority": null,
+      "content": "1.2.3.5",
+      "content_attributes": {
+        "A": {
+          "ip_address": "1.2.3.5"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0003",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": null,
+      "type": "CAA",
+      "priority": null,
+      "content": "0 issue \"ca.unit.tests\"",
+      "content_attributes": {
+        "CAA": {
+          "flag": "0",
+          "tag": "issue",
+          "value": "ca.unit.tests"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0004",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": null,
+      "type": "MX",
+      "priority": 10,
+      "content": "mx1.unit.tests",
+      "content_attributes": {
+        "MX": {
+          "hostname": "mx1.unit.tests"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0005",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": null,
+      "type": "MX",
+      "priority": 20,
+      "content": "mx2.unit.tests",
+      "content_attributes": {
+        "MX": {
+          "hostname": "mx2.unit.tests"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0006",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": null,
+      "type": "NS",
+      "priority": null,
+      "content": "ns1.unit.tests",
+      "content_attributes": {
+        "NS": {
+          "hostname": "ns1.unit.tests"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0007",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": null,
+      "type": "NS",
+      "priority": null,
+      "content": "ns2.unit.tests",
+      "content_attributes": {
+        "NS": {
+          "hostname": "ns2.unit.tests"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0008",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": null,
+      "type": "SSHFP",
+      "priority": null,
+      "content": "1 1 bf6b6825d2977c511a475bbefb88aad54a92ac73",
+      "content_attributes": {
+        "SSHFP": {
+          "algorithm": "1",
+          "fingerprint_type": "1",
+          "fingerprint": "bf6b6825d2977c511a475bbefb88aad54a92ac73"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0009",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": null,
+      "type": "TXT",
+      "priority": null,
+      "content": "v=spf1 -all",
+      "content_attributes": {
+        "TXT": {
+          "content": "v=spf1 -all"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0010",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": null,
+      "type": "TXT",
+      "priority": null,
+      "content": "with semi; colons",
+      "content_attributes": {
+        "TXT": {
+          "content": "with semi; colons"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0011",
+      "name": null,
+      "full_name": "unit.tests",
+      "ttl": null,
+      "type": "SOA",
+      "priority": null,
+      "content": "eager-cabbage.katapultdns.com. hostmaster.katapultdns.com. 1 3600 600 604800 60",
+      "content_attributes": {
+        "SOA": {}
+      }
+    },
+    {
+      "id": "dnsrec_0012",
+      "name": "*",
+      "full_name": "*.unit.tests",
+      "ttl": null,
+      "type": "A",
+      "priority": null,
+      "content": "2.2.3.6",
+      "content_attributes": {
+        "A": {
+          "ip_address": "2.2.3.6"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0014",
+      "name": "_srv._tcp",
+      "full_name": "_srv._tcp.unit.tests",
+      "ttl": 600,
+      "type": "SRV",
+      "priority": 10,
+      "content": "20 30 foo-1.unit.tests",
+      "content_attributes": {
+        "SRV": {
+          "weight": "20",
+          "port": "30",
+          "target": "foo-1.unit.tests"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0015",
+      "name": "_srv._tcp",
+      "full_name": "_srv._tcp.unit.tests",
+      "ttl": 600,
+      "type": "SRV",
+      "priority": 12,
+      "content": "20 30 foo-2.unit.tests",
+      "content_attributes": {
+        "SRV": {
+          "weight": "20",
+          "port": "30",
+          "target": "foo-2.unit.tests"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0016",
+      "name": "aaaa",
+      "full_name": "aaaa.unit.tests",
+      "ttl": 600,
+      "type": "AAAA",
+      "priority": null,
+      "content": "2601:644:500:e210:62f8:1dff:feb8:947a",
+      "content_attributes": {
+        "AAAA": {
+          "ip_address": "2601:644:500:e210:62f8:1dff:feb8:947a"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0017",
+      "name": "cname",
+      "full_name": "cname.unit.tests",
+      "ttl": 300,
+      "type": "CNAME",
+      "priority": null,
+      "content": "unit.tests",
+      "content_attributes": {
+        "CNAME": {
+          "hostname": "unit.tests"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0018",
+      "name": "ptr",
+      "full_name": "ptr.unit.tests",
+      "ttl": null,
+      "type": "PTR",
+      "priority": null,
+      "content": "foo.bar.com",
+      "content_attributes": {
+        "PTR": {
+          "hostname": "foo.bar.com"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0019",
+      "name": "Sub",
+      "full_name": "Sub.unit.tests",
+      "ttl": null,
+      "type": "NS",
+      "priority": null,
+      "content": "ns1.example.com",
+      "content_attributes": {
+        "NS": {
+          "hostname": "ns1.example.com"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0020",
+      "name": "sub",
+      "full_name": "sub.unit.tests",
+      "ttl": null,
+      "type": "NS",
+      "priority": null,
+      "content": "ns2.example.com.",
+      "content_attributes": {
+        "NS": {
+          "hostname": "ns2.example.com."
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0021",
+      "name": "redirect",
+      "full_name": "redirect.unit.tests",
+      "ttl": null,
+      "type": "HTTPRedirect",
+      "priority": null,
+      "content": "https://example.com/",
+      "content_attributes": {
+        "HTTPRedirect": {
+          "url": "https://example.com/",
+          "http_status": "301"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0022",
+      "name": "vm",
+      "full_name": "vm.unit.tests",
+      "ttl": null,
+      "type": "VirtualMachine",
+      "priority": null,
+      "content": "vm_example",
+      "content_attributes": {
+        "VirtualMachine": {
+          "virtual_machine": "vm_example"
+        }
+      }
+    },
+    {
+      "id": "dnsrec_0023",
+      "name": "legacy",
+      "full_name": "legacy.unit.tests",
+      "ttl": null,
+      "type": "IPS",
+      "priority": null,
+      "content": "192.0.2.50, 192.0.2.51",
+      "content_attributes": {
+        "IPS": {
+          "ip_addresses": "192.0.2.50, 192.0.2.51"
+        }
+      }
+    }
+  ]
+}
