@@ -1,0 +1,70 @@
+---
+'':
+  - ttl: 300
+    type: A
+    values:
+      - 1.2.3.4
+      - 1.2.3.5
+  - type: CAA
+    values:
+      - flags: 0
+        tag: issue
+        value: ca.unit.tests
+  - type: MX
+    values:
+      - exchange: mx1.unit.tests.
+        preference: 10
+      - exchange: mx2.unit.tests.
+        preference: 20
+  - type: NS
+    values:
+      - ns1.unit.tests.
+      - ns2.unit.tests.
+  - type: SSHFP
+    values:
+      - algorithm: 1
+        fingerprint: bf6b6825d2977c511a475bbefb88aad54a92ac73
+        fingerprint_type: 1
+  - type: TXT
+    values:
+      - v=spf1 -all
+      - with semi; colons
+'*':
+  type: A
+  value: 2.2.3.6
+_srv._tcp:
+  ttl: 600
+  type: SRV
+  values:
+    - port: 30
+      priority: 10
+      target: foo-1.unit.tests.
+      weight: 20
+    - port: 30
+      priority: 12
+      target: foo-2.unit.tests.
+      weight: 20
+aaaa:
+  ttl: 600
+  type: AAAA
+  value: 2601:644:500:e210:62f8:1dff:feb8:947a
+cname:
+  ttl: 300
+  type: CNAME
+  value: unit.tests.
+ptr:
+  type: PTR
+  value: foo.bar.com.
+redirect:
+  type: KatapultProvider/HTTPRedirect
+  value:
+    http_status: 301
+    url: https://example.com/
+sub:
+  type: NS
+  values:
+    - ns1.example.com.
+    - ns2.example.com.
+vm:
+  type: KatapultProvider/VirtualMachine
+  value: vm_example
