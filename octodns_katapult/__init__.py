@@ -20,7 +20,7 @@ from .client import (
 )
 from .record import KatapultHttpRedirectRecord, KatapultVirtualMachineRecord
 
-__version__ = '1.0.0-rc.1'
+__version__ = '1.0.0'
 
 __all__ = [
     'KatapultClientException',
