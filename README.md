@@ -27,14 +27,14 @@ Pinning specific versions or SHAs is recommended to avoid unplanned upgrades.
 
 ```
 octodns==1.22.0
-octodns-katapult==0.0.1
+octodns-katapult==1.0.0
 ```
 
 ##### SHAs
 
 ```
--e git+https://git@github.com/octodns/octodns.git@9da19749e28f68407a1c246dfdf65663cdc1c422#egg=octodns
--e git+https://git@github.com/DonQuinleone/octodns-katapult.git@ec9661f8b335241ae4746eea467a8509205e6a30#egg=octodns_katapult
+-e git+https://git@github.com/octodns/octodns.git@94bc80eb03f662565940dd2d4af5c20ccd61915e#egg=octodns
+-e git+https://git@github.com/DonQuinleone/octodns-katapult.git@de30cd5b8775d8cf98ffcbff3eeac77929b043b1#egg=octodns_katapult
 ```
 
 ### Configuration

@@ -187,6 +187,7 @@ jobs:
           branch="readme-pins-$VERSION"
           title="docs(readme): pin octodns-katapult $VERSION"
           entry=".changelog/$(python -c 'import uuid; print(uuid.uuid4().hex)').md"
+          mkdir -p .changelog
           printf -- '---\ntype: none\n---\nPin the README examples to %s\n' "$VERSION" > "$entry"
           base="$(git rev-parse HEAD)"
           gh api "repos/$GITHUB_REPOSITORY/git/refs" -f ref="refs/heads/$branch" -f sha="$base" > /dev/null
