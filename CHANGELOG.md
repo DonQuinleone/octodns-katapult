@@ -1,3 +1,8 @@
+## 1.0.0 - 2026-10-16
+
+Major:
+* First stable release; no changes since 1.0.0-rc.1 - [#3](https://github.com/DonQuinleone/octodns-katapult/pull/3)
+
 ## 1.0.0-rc.1 - 2026-10-16
 
 Major:
