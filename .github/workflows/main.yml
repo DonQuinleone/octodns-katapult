@@ -41,6 +41,19 @@ jobs:
       - name: CI Build
         run: |
           ./script/cibuild
+  tests:
+    needs: ci
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check every Python version passed
+        env:
+          RESULT: ${{ needs.ci.result }}
+        run: |
+          if [ "$RESULT" != "success" ]; then
+            echo "::error::Tests did not pass on every Python version (ci: $RESULT)"
+            exit 1
+          fi
   package:
     needs: config
     runs-on: ubuntu-latest
