@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/DonQuinleone/octodns-katapult/security/advisories/new
+    about: Report it privately, not as an issue.
+  - name: Problem with Katapult itself
+    url: https://krystal.io/contact
+    about: For the Katapult platform or its API, contact Krystal. This project isn't made or supported by Krystal.

@@ -1,0 +1,21 @@
+name: Feature request
+description: A record type, setting or behaviour octodns-katapult doesn't have yet
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What you're trying to do
+      description: The problem, rather than a solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help
+      description: How you'd like octodns-katapult to handle it, with an example octoDNS config if it helps.
+  - type: textarea
+    id: katapult
+    attributes:
+      label: Katapult support
+      description: Where the Katapult Core API or console offers this, if you know. A link to the API documentation is ideal.
